@@ -1,0 +1,51 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           day1
+version:        0.1.0.0
+homepage:       https://github.com/AntoineP77/AdventOfCode2021#readme
+bug-reports:    https://github.com/AntoineP77/AdventOfCode2021/issues
+author:         AntoineP77
+maintainer:     AntoineP77
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/AntoineP77/AdventOfCode2021
+
+library
+  exposed-modules:
+      Day1.Exo1
+      Day1.Exo2
+      Day2.Exo1
+      Day2.Exo2
+      Main
+  other-modules:
+      Paths_day1
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable main-exe
+  main-is: Main.hs
+  other-modules:
+      Day1.Exo1
+      Day1.Exo2
+      Day2.Exo1
+      Day2.Exo2
+      Paths_day1
+  hs-source-dirs:
+      src
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

@@ -28,6 +28,8 @@ library
       Day2.Exo2
       Day3.Exo1
       Day3.Exo2
+      Day4.Exo1
+      Day4.Exo2
       Main
   other-modules:
       Paths_day1
@@ -46,6 +48,8 @@ executable main-exe
       Day2.Exo2
       Day3.Exo1
       Day3.Exo2
+      Day4.Exo1
+      Day4.Exo2
       Paths_day1
   hs-source-dirs:
       src

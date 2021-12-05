@@ -30,7 +30,10 @@ library
       Day3.Exo2
       Day4.Exo1
       Day4.Exo2
+      Day5.Exo1
+      Day5.Exo2
       Main
+      Utils
   other-modules:
       Paths_day1
   hs-source-dirs:
@@ -50,6 +53,9 @@ executable main-exe
       Day3.Exo2
       Day4.Exo1
       Day4.Exo2
+      Day5.Exo1
+      Day5.Exo2
+      Utils
       Paths_day1
   hs-source-dirs:
       src

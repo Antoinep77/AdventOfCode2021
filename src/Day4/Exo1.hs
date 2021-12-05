@@ -4,6 +4,7 @@ module Day4.Exo1
 where
 
 import Data.Maybe
+import Utils
 
 newtype Board a = Board [[a]]
 
@@ -15,19 +16,6 @@ instance Show a => Show (Board a) where
 
 solution :: String -> Int
 solution = uncurry (*) . fmap computeBoardSum . uncurry getWinningBoard . parseInput
-
-split :: String -> String -> [String]
-split sep str = filter (/= "") (splitWithAcc "" sep str)
-  where
-    splitWithAcc :: String -> String -> String -> [String]
-    splitWithAcc acc sep "" = [reverse acc]
-    splitWithAcc acc [x1, y1] (x : y : rest)
-      | x == x1 && y == y1 = reverse acc : splitWithAcc "" [x1, y1] (y : rest)
-      | otherwise = splitWithAcc (x : acc) [x1, y1] (y : rest)
-    splitWithAcc acc [x1] (x : rest)
-      | x == x1 = reverse acc : splitWithAcc "" [x1] rest
-      | otherwise = splitWithAcc (x : acc) [x1] rest
-    splitWithAcc acc sep (h : t) = splitWithAcc (h : acc) sep t
 
 parseInput :: String -> ([Int], [Board (Maybe Int)])
 parseInput str = (values, boards)

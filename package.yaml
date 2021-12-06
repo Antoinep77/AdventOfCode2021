@@ -1,5 +1,5 @@
-name:                day1
-version:             0.1.0.0
+name:                adventofcode
+version:             1.0.0
 github:              "AntoineP77/AdventOfCode2021"
 author:              "AntoineP77"
 
@@ -8,6 +8,7 @@ extra-source-files:
 
 dependencies:
 - base >= 4.7 && < 5
+- containers
 
 library:
   source-dirs: src

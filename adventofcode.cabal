@@ -34,6 +34,8 @@ library
       Day5.Exo2
       Day6.Exo1
       Day6.Exo2
+      Day7.Exo1
+      Day7.Exo2
       Main
       Utils
   other-modules:
@@ -60,6 +62,8 @@ executable main-exe
       Day5.Exo2
       Day6.Exo1
       Day6.Exo2
+      Day7.Exo1
+      Day7.Exo2
       Utils
       Paths_adventofcode
   hs-source-dirs:
